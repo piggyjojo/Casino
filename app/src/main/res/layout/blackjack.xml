@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/p1"
+        android:layout_width="77dp"
+        android:layout_height="112dp"
+        android:layout_above="@id/stand"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
+    <Button
+        android:id="@+id/p2"
+        android:layout_width="77dp"
+        android:layout_height="112dp"
+        android:layout_above="@id/stand"
+        android:layout_marginBottom="21dp"
+        android:layout_toEndOf="@id/p1" />
+
+
+    <Button
+        android:id="@+id/p3"
+        android:layout_width="77dp"
+        android:layout_height="112dp"
+        android:layout_above="@id/stand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp" />
+
+    <Button
+        android:id="@+id/p4"
+        android:layout_width="77dp"
+        android:layout_height="112dp"
+        android:layout_above="@id/stand"
+        android:layout_marginBottom="21dp"
+        android:layout_toStartOf="@id/p5" />
+
+    <Button
+        android:id="@+id/p5"
+        android:layout_width="77dp"
+        android:layout_height="112dp"
+        android:layout_above="@id/stand"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="21dp" />
+
+    <Button
+        android:id="@+id/d2"
+        android:layout_width="77dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/surrender"
+        android:layout_marginTop="21dp"
+        android:layout_toStartOf="@id/d1"
+        />
+
+    <Button
+        android:id="@+id/d3"
+        android:layout_width="77dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/surrender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:id="@+id/d4"
+        android:layout_width="77dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/surrender"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@id/d5" />
+
+    <Button
+        android:id="@+id/d5"
+        android:layout_width="77dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/surrender"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+
+    <Button
+        android:id="@+id/d1"
+        android:layout_width="79dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/surrender"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:id="@+id/hit"
+        android:layout_width="93dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@id/stand"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-113dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@id/stand"
+        android:text="Hit" />
+
+    <Button
+        android:id="@+id/stand"
+        android:layout_width="93dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="stand" />
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/split"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/surrender"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@id/surrender"
+        android:text="split" />
+
+    <Button
+
+        android:id="@+id/dbbl"
+        android:layout_width="93dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/stand"
+        android:text="Double" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/surrender"
+        android:layout_width="195dp"
+        android:layout_height="93dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Surrender" />
+
+    <TextView
+        android:id="@+id/outCome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="YOU WIN!"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/deal"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:text="Deal" />
+
+
+    <Button
+        android:id="@+id/cmmndBot"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/p1"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20sp"
+        android:backgroundTint="@color/colortextbkgnd" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="186dp"
+        android:layout_height="36dp"
+        android:layout_above="@id/p5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/seekBarStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekBar"
+        android:layout_alignParentEnd="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekBarStatus"
+        android:layout_alignStart="@id/seekBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-12dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="settings" />
+
+</RelativeLayout>
